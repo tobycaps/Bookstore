@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="bookStore.html" class="w3-bar-item w3-button w3-padding-large"><img src="img/Booked.png" alt="logo" style="width: 150px; filter: grayscale(100%);"></a>
+      <a href = "#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BOOKS</a>
+      <a href="CartPage.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CART</a>
+  
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
+  </div>
+  
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="img/books/book1.jpg" alt="little prince" style="width:100%; height: 320px;">
+      <h3>The Little Prince by Antoine de Saint-Exupéry</h3>
+      <p>The Little Prince is an honest and beautiful story about loneliness, friendship, sadness, and love. The prince is a small boy from a tiny planet (an asteroid to be precise), who travels the universe, planet-to-planet, seeking wisdom. On his journey, he discovers the unpredictable nature of adults.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img/books/book2.jpg" alt="jurassic park" style="width:100%; height: 320px;">
+      <h3>Jurassic Park by Michael Crichton</h3>
+      <p>Jurassic Park is a 1990 Science fiction novel written by Michael Crichton. A cautionary tale about genetic engineering, it presents the collapse of a zoological park showcasing genetically recreated dinosaurs to illustrate the mathematical concept of chaos theory and its real world implications.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img/books/book3.jpg" alt="everything illuminated" style="width:100%" height="320px">
+      <h3>Everything Is Illuminated by Jonathan Safran Foer </h3>
+      <p>Everything Is Illuminated is the first novel by the American writer Jonathan Safran Foer, published in 2002. It was adapted into a film of the same name starring Elijah Wood and Eugene Hütz in 2005. </p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img/books/book4.jpg" alt="clockwork orange" style="width:100%; height: 320px;">
+      <h3>A Clockwork Orange by Anthony Burgess</h3>
+      <p>A Clockwork Orange is a dystopian satirical black comedy novel by English writer Anthony Burgess, published in 1962. It is set in a near-future society that has a youth subculture of extreme violence.</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="img/books/book5.jpg" alt="jaws" style="width:100%; height: 320px;">
+      <h3>Jaws by Peter Benchley</h3>
+      <p>Jaws is a novel by American writer Peter Benchley, published in 1974. It tells the story of a large great white shark that preys upon a small Long Island resort town and the three men who attempt to kill it.</p>
+    </div>
+    <div class="w3-quarter">
+        <img src="img/books/book6.jpg" alt="psycho" style="width:100%; height: 320px;">
+      <h3>Psycho by Robert Bloch</h3>
+      <p>Psycho is a 1959 horror novel by American writer Robert Bloch. The novel tells the story of Norman Bates, a caretaker at an isolated motel who struggles under his domineering mother and becomes embroiled in a series of murders.</p>
+    </div>
+    <div class="w3-quarter">
+        <img src="img/books/book7.jpg" alt="gatsby" style="width:100%; height: 320px;">
+      <h3>The Great Gatsby by F. Scott Fitzgerald</h3>
+      <p>The Great Gatsby is set in the Jazz Age on Long Island, near New York City, the novel depicts first-person narrator Nick Carraway's interactions with mysterious millionaire Jay Gatsby and Gatsby's obsession to reunite with his former lover, Daisy Buchanan.</p>
+    </div>
+    <div class="w3-quarter">
+        <img src="img/books/book8.jpg" alt="the godfather" style="width:100%; height: 320px;">
+      <h3>The Godfather by Mario Puzo</h3>
+      <p>The Godfather is a crime novel by American author Mario Puzo. Originally published in 1969 by G. P. Putnam's Sons, the novel details the story of a fictional Mafia family in New York City, headed by Vito Corleone, the Godfather.</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+   <!-- The Contact Section -->
+   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">DEVELOPER</h2>
+    <div class="w3-row w3-center">
+      <img style="width: 250px; border-radius: 50%;" src="img/me.jpg" alt="Toby Poncio">
+      <p>Poncio, Toby Carl A.</p>
+      <p>BIT34</p>
+    </div>
+    
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge ">
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

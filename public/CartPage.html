@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+table{
+    border: 1px solid #1C6EA4;
+    background-color: #EEEEEE;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table td{
+    padding: 1rem;
+    margin: 0;
+    border: solid 1px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="bookStore.html" class="w3-bar-item w3-button w3-padding-large"><img src="img/Booked.png" alt="logo" style="width: 150px; filter: grayscale(100%);"></a>
+      <a href="BooksPage.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BOOKS</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CART</a>
+  
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
+  </div>
+  
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+<!--CART-->
+<div class="cart" align="center">
+    <table>
+        <tr>
+            CART
+        </tr>
+        <tr>
+            <td>Items</td>
+            <td>Price</td>
+        </tr>
+        <tr>
+            <td>
+                <select name="books" id="books" onchange="prices()">
+                    <option value="0">--Books--</option>
+                    <option value="1">Devoted by Dean Koontz - ₱250</option>
+                    <option value="2">The Brass Verdict by Michael Connelly - ₱250</option>
+                    <option value="3">Trust by Hernan Diaz - ₱250</option>
+                    <option value="4">The Little Prince by Antoine de Saint-Exupéry - ₱250</option>
+                    <option value="5">Jurassic Park by Michael Crichton - ₱250</option>
+                    <option value="6">Everything Is Illuminated by Jonathan Safran Foer - ₱250</option>
+                    <option value="7">A Clockwork Orange by Anthony Burgess - ₱250</option>
+                    <option value="8">Jaws by Peter Benchley - ₱250</option>
+                    <option value="9">Psycho by Robert Bloch - ₱250</option>
+                    <option value="10">The Great Gatsby by F. Scott Fitzgerald - ₱250</option>
+                    <option value="11">The Godfather by Mario Puzo - ₱250</option>
+                </select>
+            </td>
+            <td>
+                <label id="prices">₱0</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                
+            </td>
+            <td>
+                <button style="background-color: rgb(241, 105, 105); border: solid 1px; cursor: pointer;" onclick="purchase()">Purchase</button>
+            </td>
+        </tr>
+        
+    </table>
+</div>
+  
+  <hr>
+
+   <!-- The Contact Section -->
+   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">DEVELOPER</h2>
+    <div class="w3-row w3-center">
+      <img style="width: 250px; border-radius: 50%;" src="img/me.jpg" alt="Toby Poncio">
+      <p>Poncio, Toby Carl A.</p>
+      <p>BIT34</p>
+    </div>
+    
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge ">
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+function prices() {
+    const selectElement = document.getElementById("books");
+    const selectedValue = selectElement.value;
+    const priceLabel = document.getElementById("prices");
+
+    if (selectedValue === "1" || selectedValue === "2" || selectedValue === "3" || selectedValue === "4" || selectedValue === "5" || selectedValue === "6" || selectedValue === "7" || selectedValue === "8" || selectedValue === "9" || selectedValue === "10" || selectedValue === "11") {
+        priceLabel.textContent = "₱250";
+    }
+    // Add more conditions for other options if needed
+    else {
+        priceLabel.textContent = "₱0"; // Set default price when no option is selected or not matched
+    }
+}
+function purchase(){
+        alert("Purchase Complete!");
+}
+</script>
+
+</body>
+</html>
